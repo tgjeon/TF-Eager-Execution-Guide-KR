@@ -1,15 +1,14 @@
-# Eager Execution
+# 즉시 실행 (Eager Execution)
 
-> *WARNING*: This is a preview/pre-alpha version. The API and performance
-> characteristics are subject to change.
+> *경고*: 본 기능은 미리보기/사알파 버전입니다. API 및 성능 특성은 변경될 수 있습니다.
 
-Eager execution is an experimental interface to TensorFlow that provides an
-imperative programming style (à la [NumPy](http://www.numpy.org)). When you
-enable eager execution, TensorFlow operations execute immediately; you do not
-execute a pre-constructed graph with
-[`Session.run()`](https://www.tensorflow.org/api_docs/python/tf/Session).
+즉시 실행 (Eager execution)은 텐서플로우의 실험적인 인터페이스로
+([NumPy](http://www.numpy.org) 류와 같은) 명령형 프로그래밍 스타일을 제공한다.
+사용자가 즉시 실행을 활성화 시킨다면, 텐서플로우 작업이 즉시 실행됩니다.
+사용자는 미리 만들어진 그래프를 [`Session.run()`](https://www.tensorflow.org/api_docs/python/tf/Session)
+으로 실행할 필요가 없습니다.
 
-For example, consider a simple computation in TensorFlow:
+예를 들면, 텐서플로우에서 간단한 계산을 한다고 생각해봅시다:
 
 ```python
 x = tf.placeholder(tf.float32, shape=[1, 1])
@@ -21,7 +20,7 @@ with tf.Session() as sess:
 # Will print [[4.]]
 ```
 
-Eager execution makes this much simpler:
+즉시 실행은 이 작업을 단순하게 할 수 있습니다:
 
 ```python
 x = [[2.]]
@@ -30,32 +29,30 @@ m = tf.matmul(x, x)
 print(m)
 ```
 
-## Caveats
+## 주의사항
 
-This feature is in early stages and work remains to be done in terms of smooth
-support for distributed and multi-GPU training and CPU performance.
+본 기능은 초기 단계에 있으며, 분산 및 다수 GPU 학습과 CPU 성능에 대한 원활한 지원을 위해 개선사항이 남아 있습니다.
 
-- [Known issues](https://github.com/tensorflow/tensorflow/issues?q=is%3Aissue%20is%3Aopen%20label%3Acomp%3Aeager)
-- Feedback is welcome, please consider
-  [filing an issue](https://github.com/tensorflow/tensorflow/issues/new) to provide it.
+- [알려진 이슈 사항](https://github.com/tensorflow/tensorflow/issues?q=is%3Aissue%20is%3Aopen%20label%3Acomp%3Aeager)
+- 피드백을 기다립니다, [문제 제기](https://github.com/tensorflow/tensorflow/issues/new)를 통해 피드백 주세요.
 
-## Installation
+## 설치
 
-Eager execution is included in TensorFlow versions 1.5 and above.
-Installation instructions at https://www.tensorflow.org/install/
+즉시 실행 (Eager execution)은 텐서플로우 1.5 버전 이상에 포함되어 있습니다.
+설치 방법은 [공식 홈페이지 설치문서](https://www.tensorflow.org/install/)를 참고하세요.
 
-## Documentation
+## 문서화
 
-For an introduction to eager execution in TensorFlow, see:
+텐서플로우의 즉시 실행 (eager execution)을 설명하기 위해 작성된 문서가 있습니다. 다음을 참고하세요:
 
-- [User Guide](python/g3doc/guide.md)
-- Notebook: [Basic Usage](python/examples/notebooks/1_basics.ipynb)
-- Notebook: [Gradients](python/examples/notebooks/2_gradients.ipynb)
-- Notebook: [Importing Data](python/examples/notebooks/3_datasets.ipynb)
+- [사용자 가이드 (User Guides)](python/g3doc/guide.md)
+- 노트북: [기본 사용법 (Basic Usages)](python/examples/notebooks/1_basics.ipynb)
+- 노트북: [경사도 (Gradients)](python/examples/notebooks/2_gradients.ipynb)
+- 노트북: [데이터 불러오기 (Importing Data)](python/examples/notebooks/3_datasets.ipynb)
 
-## Changelog
+## 변화사항
 
-- 2017/10/31: Initial preview release.
-- 2017/12/01: Example of dynamic neural network:
+- 2017/10/31: 초기 미리보기 버전 출시.
+- 2017/12/01: 동적 신경망의 예제:
   [SPINN: Stack-augmented Parser-Interpreter Neural Network](https://arxiv.org/abs/1603.06021).
-  See [README.md](python/examples/spinn/README.md) for details.
+  자세한 내용은 다음 문서를 참고하세요: [README.md](python/examples/spinn/README.md)
