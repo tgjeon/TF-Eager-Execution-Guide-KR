@@ -54,3 +54,13 @@ print(m)
   [SPINN: Stack-augmented Parser-Interpreter Neural Network](https://arxiv.org/abs/1603.06021).
   자세한 내용은 다음 문서를 참고하세요: [README.md](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/eager/python/examples/spinn/README.md)
 - 2017/03: TensorFlow 1.7 버전에서 핵심 기능들이 실험적인 tf.contrib 네임스페이스에서 벗어났습니다.
+
+## TODO
+- 다양한 Example 수록
+  - gan
+  - linear_regression
+  - mnist
+  - resnet50
+  - rnn_colorbot
+  - rnn_ptb
+  - spinn
