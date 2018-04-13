@@ -42,7 +42,7 @@ print(m)
 
 텐서플로우의 즉시 실행 (eager execution)을 설명하기 위해 작성된 문서가 있습니다. 다음을 참고하세요:
 
-- [사용자 가이드 (User Guides)](https://www.tensorflow.org/programmers_guide/eager) ([source](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/docs_src/programmers_guide/eager.md))
+- [한글 사용자 가이드 (User Guides for Korean)](./guide.md) ([source](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/docs_src/programmers_guide/eager.md))
 - 노트북: [기본 사용법 (Basic Usages)](./notebooks/1_basics.ipynb)
 - 노트북: [경사도 (Gradients)](./notebooks/2_gradients.ipynb)
 - 노트북: [데이터 불러오기 (Importing Data)](./notebooks/3_datasets.ipynb)
@@ -52,5 +52,5 @@ print(m)
 - 2017/10/31: 초기 preview 버전 출시. (in TensorFlow 1.5)
 - 2017/12/01: 동적 신경망의 예제:
   [SPINN: Stack-augmented Parser-Interpreter Neural Network](https://arxiv.org/abs/1603.06021).
-  자세한 내용은 다음 문서를 참고하세요: [README.md](python/examples/spinn/README.md)
-- 2017/03: TensorFlow 1.7 버전에서 핵심 기능들이 실험적인 tf.conftrib 네임스페이스에서 벗어났습니다.
+  자세한 내용은 다음 문서를 참고하세요: [README.md](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/eager/python/examples/spinn/README.md)
+- 2017/03: TensorFlow 1.7 버전에서 핵심 기능들이 실험적인 tf.contrib 네임스페이스에서 벗어났습니다.
