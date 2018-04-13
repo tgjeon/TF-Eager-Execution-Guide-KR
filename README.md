@@ -43,9 +43,9 @@ print(m)
 텐서플로우의 즉시 실행 (eager execution)을 설명하기 위해 작성된 문서가 있습니다. 다음을 참고하세요:
 
 - [한글 사용자 가이드 (User Guides for Korean)](./guide.md) ([source](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/docs_src/programmers_guide/eager.md))
-- 노트북: [기본 사용법 (Basic Usages)](./notebooks/1_basics.ipynb)
-- 노트북: [경사도 (Gradients)](./notebooks/2_gradients.ipynb)
-- 노트북: [데이터 불러오기 (Importing Data)](./notebooks/3_datasets.ipynb)
+- 노트북: [기본 사용법 (Basic Usages)](./examples/notebooks/1_basics.ipynb)
+- 노트북: [경사도 (Gradients)](./examples/notebooks/2_gradients.ipynb)
+- 노트북: [데이터 불러오기 (Importing Data)](./examples/notebooks/3_datasets.ipynb)
 
 ## 변화사항
 
